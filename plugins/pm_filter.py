@@ -418,7 +418,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('CHANNEL', url='https://t.me/BAGURUJOINAGUUKANNADAMOVIES_17'),
-            InlineKeyboardButton('JOIN CHANNEL', callback_data='CHANNEL')
+            InlineKeyboardButton('JOIN CHANNEL', url='https://t.me/BAGURUJOINAGUUKANNADAMOVIES_17')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
@@ -429,7 +429,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "source":
+    elif query.data == "CHANNEL":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
